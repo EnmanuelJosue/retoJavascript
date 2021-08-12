@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto curso Práctico JavaScript</title>
+</head>
+<body>
+    <section>
+        <h1>¿Le sacas provecho a tu suscripción de Streaming?</h1>
+        <p>En esta página vamos a comparar si te sale más economico
+            ir al cine a ver tus películas o verlas por tus servicios
+            de streaming favoritos. 
+        </p>
+        <p>*Precios en dolares en Venezuela (USD $)</p>
+    </section>
+    <section>
+        <div>
+            <h2>¿Cuantas películas ves al mes? ($4c/u)</h2>
+            <input id="inputPelisAlMes" type="number" placeholder="Número de peliculas">
+        </div>
+        <div>
+            <h2>¿Cuales son tus plataformas de streaming favoritas?</h2>
+            <div>
+                <label for="netflix">
+                    <input type="checkbox" value="8" name="netflix" id="netflix"> Netflix
+                </label>
+                <label for="amazon">
+                    <input type="checkbox" value="6" name="amazon" id="amazon"> Amazon Prime Video
+                </label>
+                <label for="disney">
+                    <input type="checkbox" value="6" name="disney" id="disney"> DisneyPlus
+                </label>
+                <label for="HBO">
+                    <input type="checkbox" value="6" name="hbo" id="hbo">HBO max
+                </label>
+                <button type="submit" onclick="iniciar()" >Comparar</button>
+            </div>
+            <div class="div">
+                <p id="ResultP"></p>
+            </div>
+                
+        </div>
+    </section>
+        
+    <script src="./assets/index.js"></script>    
+</body>
+</html>

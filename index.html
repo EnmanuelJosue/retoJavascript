@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reto curso Práctico JavaScript</title>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
-    <section>
+    <header class="header">
+        <a href="https://github.com/EnmanuelJosue"> <img src="./assets/github.png" alt=""></a>
+    </header>
+    <section class="section">
         <h1>¿Le sacas provecho a tu suscripción de Streaming?</h1>
         <p>En esta página vamos a comparar si te sale más economico
             ir al cine a ver tus películas o verlas por tus servicios
@@ -15,14 +19,15 @@
         </p>
         <p>*Precios en dolares en Venezuela (USD $)</p>
     </section>
-    <section>
-        <div>
+    <section class="section2">
+        <div class="div1">
             <h2>¿Cuantas películas ves al mes? ($4c/u)</h2>
             <input id="inputPelisAlMes" type="number" placeholder="Número de peliculas">
+            <p class="error" id="errorAddValue"></p>
         </div>
-        <div>
+        <div class="div2">
             <h2>¿Cuales son tus plataformas de streaming favoritas?</h2>
-            <div>
+            <div class="div2-d1">
                 <label for="netflix">
                     <input type="checkbox" value="8" name="netflix" id="netflix"> Netflix
                 </label>
@@ -33,11 +38,11 @@
                     <input type="checkbox" value="6" name="disney" id="disney"> DisneyPlus
                 </label>
                 <label for="HBO">
-                    <input type="checkbox" value="6" name="hbo" id="hbo">HBO max
+                    <input type="checkbox" value="6" name="hbo" id="hbo"> HBO max
                 </label>
                 <button type="submit" onclick="iniciar()" >Comparar</button>
             </div>
-            <div class="div">
+            <div class="div2-d2">
                 <p id="ResultP"></p>
             </div>
                 

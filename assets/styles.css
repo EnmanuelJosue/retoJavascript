@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url(./background.png);
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 0.6rem;
+}
+.header img{
+    
+    width: 7rem;
+    height: 7rem;
+    filter: invert(87%) sepia(94%) saturate(0%) hue-rotate(112deg) brightness(109%) contrast(106%);
+    
+}
+.header img:hover{
+    transition: 2s;
+    filter: invert(89%) sepia(33%) saturate(4206%) hue-rotate(175deg) brightness(97%) contrast(94%);
+}
+.section{
+    margin: 0.5rem;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #d1ccc7;
+}
+.section2{
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div1 input{
+    width: 20rem;
+    height: 3.2rem;
+    margin: 2rem;
+    border: 2px solid #0EB1D2;
+    background: transparent;
+    outline: none;
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 20px;
+    color: #fff;
+
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div2-d1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+button {
+    width: 20rem;
+    margin: 2rem 0;
+    padding: 0.8rem 1.6rem;
+    border: 2px solid #0EB1D2;
+    background: none;
+    border-radius: 20px;
+    color: white;
+    transition: background, box-shadow 450ms;
+    font-size: 1.8rem;    
+  }
+  
+button:hover {
+    color: #fff;
+    background-color: #bde4ec;
+    box-shadow: 0 0 5px #0EB1D2, 0 0 25px #0EB1D2, 0 0 50px #0EB1D2, 0 0 100px #0EB1D2;
+}
+.div2-d2{
+    text-align: center;
+}

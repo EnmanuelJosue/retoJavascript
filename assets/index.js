@@ -1,5 +1,4 @@
-const netflix = document.querySelector("#netflix");
-console.log(netflix);
+
 function iniciar(){
 
     const inputPelisAlMes = document.getElementById("inputPelisAlMes");
@@ -17,19 +16,19 @@ function iniciar(){
     
     const suma = checked(netflix,amazon,disney,hbo);
     console.log(suma);
-    if(inputPelisAlMesIngresoValue == "" || inputPelisAlMesIngresoValue == 0){
-        alert("Ingresa un dato válido");
+    if(inputPelisAlMesIngresoValue == "" || inputPelisAlMesIngresoValue <= 0 ){
+        errorAddValue = document.getElementById("errorAddValue");
+        errorAddValue.innerHTML = "Ingrese un valor válido";
     }else{
         if(costoPelis > suma){
-            alert("Es más economíco ver películas vía streaming");
+            const resultP = document.getElementById("ResultP");
+            resultP.innerText = "Es más ecnomíco usar tus plataformas Streaming, precio: $"+ suma 
+            + "\n Cine: $"+costoPelis + " vs Streaming: $"+suma;
         }else{
-            alert("Es más economíco ir al cine")
+            const resultP = document.getElementById("ResultP");
+            resultP.innerText = "Es más economíco ir al cine, precio: $"+ costoPelis + "\n Cine: $"+costoPelis + " vs Streaming: $"+suma;
         }
     }
-  
-    
-    console.log(inputPelisAlMesIngresoValue);
-       
   
 } 
 
@@ -39,6 +38,4 @@ function checked(e1,e2,e3,e4){
      const elementsCheck = elements.filter(element => element.checked); // checked nos muestra el valor del checkbox si esta seleccionado o no
      const elementsTotal = elementsCheck.reduce((suma, item) => suma = suma + Number(item.value), 0);
      return elementsTotal;
-     console.log(elementsCheck);
-     console.log(elementsTotal);
 }
